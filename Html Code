@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#rooms">Rooms</a></li>
+                <li><a href="#book">Book a Room</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="container">
+            <h1>Welcome to Our Hotel</h1>
+            <p>Experience luxury and comfort during your stay with us.</p>
+        </div>
+    </section>
+
+    <!-- Rooms Section -->
+    <section id="rooms">
+        <div class="container">
+            <h2>Our Rooms</h2>
+            <div class="room">
+                <h3>Single Room</h3>
+                <p>A comfortable single room with all necessary amenities.</p>
+                <p><strong>Price:</strong> $100 per night</p>
+            </div>
+            <div class="room">
+                <h3>Double Room</h3>
+                <p>A spacious double room perfect for couples or friends.</p>
+                <p><strong>Price:</strong> $150 per night</p>
+            </div>
+            <div class="room">
+                <h3>Suite</h3>
+                <p>Luxurious suite with a stunning view and premium facilities.</p>
+                <p><strong>Price:</strong> $300 per night</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="book">
+        <div class="container">
+            <h2>Book a Room</h2>
+            <form id="booking-form">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="room-type">Room Type:</label>
+                <select id="room-type" name="room-type" required>
+                    <option value="single">Single Room</option>
+                    <option value="double">Double Room</option>
+                    <option value="suite">Suite</option>
+                </select>
+
+                <label for="check-in">Check-in Date:</label>
+                <input type="date" id="check-in" name="check-in" required>
+
+                <label for="check-out">Check-out Date:</label>
+                <input type="date" id="check-out" name="check-out" required>
+
+                <button type="submit">Book Now</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or need assistance, feel free to contact us:</p>
+            <ul>
+                <li>Email: info@hotelmanagement.com</li>
+                <li>Phone: 123-456-7890</li>
+                <li>Address: 123 Hotel Street, City, Country</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Hotel Management System. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
